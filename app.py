@@ -5,8 +5,6 @@ import numpy as np
 from PIL import Image
 
 
-with open(r"Model/Eye_Cataract_VGG16_model.pkl", "rb") as pickle_in:
-    model = pkl.load(pickle_in)
 
 def welcome():
     return "Welcome All"
