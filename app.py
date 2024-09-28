@@ -3,10 +3,10 @@ import pickle as pkl
 import pandas as pd
 import numpy as np
 from PIL import Image
+from tensorflow.keras.models import load_model
 
-
-pickle_in = open(r"Model/Eye_Cataract_VGG16_model.pkl", "rb")
-model = pkl.load(pickle_in)
+# Assuming the model is saved in 'Model/Eye_Cataract_VGG16_model.h5'
+model = load_model("Model/Eye_Cataract_VGG16_model.h5")
 
 
 def welcome():
